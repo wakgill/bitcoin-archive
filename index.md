@@ -28,7 +28,8 @@ Highlighting text will automatically update the permalink in browser so that you
 
 ### Copying this archive
 1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
-```https://github.com/wakgill/bitcoin-archive.git
+```
+https://github.com/wakgill/bitcoin-archive.git
 ```
 <small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/pmarsceill/jtd-remote)</small>
 
