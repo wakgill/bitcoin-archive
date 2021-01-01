@@ -2,6 +2,7 @@
 layout: default
 title: Bitcoin Whitepaper
 parent: Literature
+nav_order: 1
 ---
 
 # Bitcoin Whitepaper
