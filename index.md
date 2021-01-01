@@ -22,6 +22,10 @@ Bitcoin Archive gathers the most important primary and secondary source material
 
 You can search any document in the archive by author, dates, and keywords. Try out terms like micropayment, VISA, Moore's Law, Mike Hearn, node, anonymous. Results will appear in real-time. 
 
+### Sharing
+
+Highlighting text will automatically update the permalink in browser so that you can link to any specific piece of text in any document. People who click the links you share will automatically jump to the highlighted text on the page.
+
 ### Quick start: Use as a GitHub Pages remote theme
 
 1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
