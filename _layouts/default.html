@@ -126,14 +126,14 @@
             </ol>
           </nav>
         {% endif %}
-      {% endunless %}
+      {% endunless %}    <span id="CONTENT">
       <div id="main-content" class="main-content" role="main">
         {% if site.heading_anchors != false %}
           {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
         {% else %}
         
-        <span id="CONTENT">
-          {{ content }}</span>
+    
+          {{ content }}
         {% endif %}
           
 
@@ -198,6 +198,8 @@
       <div class="search-overlay"></div>
     {% endif %}
   </div>
+	
+	</span>
   <script type="text/javascript">
 	function findPos(obj) {
   var curtop = 0;
