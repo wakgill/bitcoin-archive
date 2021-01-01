@@ -24,7 +24,7 @@ You can search any document in the archive by author, dates, and keywords. Try o
 
 ### Sharing
 
-Highlighting text will automatically update the permalink in browser so that you can link to any specific piece of text in any document. People who click the links you share will automatically jump to the highlighted text on the page.
+Highlighting text will automatically update the permalink in browser so that you can link to any specific piece of text in any document. People who click the links you share will automatically jump to the highlighted text on the page. Headers also have anchor links.
 
 ### Quick start: Use as a GitHub Pages remote theme
 
