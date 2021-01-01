@@ -16,7 +16,7 @@ Bitcoin Archive gathers the most important primary and secondary source material
 
 ---
 
-## Getting started
+## How to use this archive
 
 ### Search
 
