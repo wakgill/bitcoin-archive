@@ -20,6 +20,7 @@ Just the Docs has some specific configuration parameters that can be defined in 
 
 
 # Bitcoin: A Peer-to-Peer Electronic Cash System
+{: .no_toc }
 
 ## Abstract
 
