@@ -131,7 +131,7 @@ Rearranging to avoid summing the infinite tail of the distribution…
 
 Converting to C code…
 
-<pre>#include &lt;math.h&gt;
+```#include &lt;math.h&gt;
 double AttackerSuccessProbability(double q, int z)
 {
 	double p = 1.0 - q;
@@ -146,11 +146,13 @@ double AttackerSuccessProbability(double q, int z)
 		sum -= poisson * (1 - pow(q / p, z - k));
 	}
 	return sum;
-}</pre>
+}
+```
 
 Running some results, we can see the probability drop off exponentially with z.
 
-<pre>q=0.1
+```
+q=0.1
 z=0    P=1.0000000
 z=1    P=0.2045873
 z=2    P=0.0509779
@@ -174,11 +176,13 @@ z=30   P=0.0001522
 z=35   P=0.0000379
 z=40   P=0.0000095
 z=45   P=0.0000024
-z=50   P=0.0000006</pre>
+z=50   P=0.0000006
+```
 
 Solving for P less than 0.1%…
 
-<pre>P &lt; 0.001
+```
+P &lt; 0.001
 q=0.10   z=5
 q=0.15   z=8
 q=0.20   z=11
@@ -186,7 +190,8 @@ q=0.25   z=15
 q=0.30   z=24
 q=0.35   z=41
 q=0.40   z=89
-q=0.45   z=340</pre>
+q=0.45   z=340
+```
 
 <h2>12. Conclusion</h2>
 
