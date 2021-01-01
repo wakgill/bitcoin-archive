@@ -131,7 +131,8 @@ Rearranging to avoid summing the infinite tail of the distribution…
 
 Converting to C code…
 
-```#include &lt;math.h&gt;
+```
+#include &lt;math.h&gt;
 double AttackerSuccessProbability(double q, int z)
 {
 	double p = 1.0 - q;
