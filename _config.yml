@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Just the Docs
+title: Bitcoin Archive
 description: A Jekyll theme for documentation
-baseurl: "/just-the-docs" # the subpath of your site, e.g. /blog
+baseurl: "/bitcoin-archive" # the subpath of your site, e.g. /blog
 url: "https://pmarsceill.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
