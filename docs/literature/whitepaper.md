@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Bitcoin Whitepaper
+parent: Literature
 ---
 
 # Bitcoin Whitepaper
