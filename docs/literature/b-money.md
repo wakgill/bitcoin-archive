@@ -2,7 +2,7 @@
 layout: default
 title: "b-money"
 nav_order: 2
-has_parent: true
+parent: Literature
 ---
 
 # b-money
