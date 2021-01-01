@@ -233,5 +233,9 @@ http://www.hashcash.org/papers/hashcash.pdf, 2002.
 
 [8] W. Feller, “An introduction to probability theory and its applications,” 1957.
 
+---
+
+PDF available in English, Chinese (Simplified), Chinese (Traditional), Hebrew, Italian, Japanese, Russian, Spanish, and Vietnamese
+
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
