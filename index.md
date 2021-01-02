@@ -32,11 +32,11 @@ In general you will find the best search results by typing less to account for v
 Highlighting text will automatically update the permalink in browser so that you can link to any specific piece of text in any document. People who click the links you share will automatically jump to the highlighted text on the page. Headers also have anchor links for easy jumping or sharing.
 
 ### Copying this archive
-1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
+1. Add this site to GitHub account with a simple import.
 ```
 https://github.com/wakgill/bitcoin-archive.git
 ```
-<small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/pmarsceill/jtd-remote)</small>
+<small>You must then update any links that are specific to this site and make sure GitHub pages is enabled. The site is built to make this quick and easy.</small>
 
 ---
 
