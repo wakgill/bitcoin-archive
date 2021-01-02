@@ -19,8 +19,7 @@ Just the Docs has some specific configuration parameters that can be defined in 
 
 ---
 
-
-# Bitcoin: A Peer-to-Peer Electronic Cash System
+# Bitcoin: Un Sistema de Dinero en Efectivo Electrónico Peer­-to­-PeerBitcoin: A Peer-to-Peer Electronic Cash System
 {: .no_toc }
 
 ## Resumen
