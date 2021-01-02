@@ -1,0 +1,86 @@
+
+<html>
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Bitcoin.org - Open Source P2P Electronic Cash</title>
+</head>
+<body>
+<font style="font-size: 26px"><b>Bitcoin.org</b></font>
+<font style="font-size: 13px" face="helv, arial">
+<hr>
+Bitcoin is a free open source peer-to-peer electronic cash system that is completely decentralized, without the need for a central server or trusted parties.  Users hold the crypto keys to their own money and transact directly with each other, with the help of the P2P network to check for double-spending.<br>
+<br>
+<img src="https://web.archive.org/web/20090822060833im_/http://www.bitcoin.org/screen3.png" width="640" height="300" border="0"><br>
+<br>
+<img src="https://web.archive.org/web/20090822060833im_/http://www.bitcoin.org/screen4.png" width="625" height="286" border="0"><br>
+<br>
+Windows NT/2000/XP/Vista.  Open source C++ code is included.<br>
+<br>
+Download link: <a href="https://web.archive.org/web/20090822060833/http://sourceforge.net/project/showfiles.php?group_id=244765&amp;package_id=298441">bitcoin-0.1.5.rar</a><br>
+<br>
+- Unpack the files into a directory<br>
+- Run BITCOIN.EXE<br>
+- It automatically connects to other nodes<br>
+<br>
+If you can keep a node running that accepts incoming connections, you'll really be helping the network a lot.  Port 8333 on your firewall needs to be open to receive incoming connections.<br>
+<br>
+The software is still alpha and experimental.  There's no guarantee the system's state won't have to be restarted at some point if it becomes necessary, although I've done everything I can to build in extensibility and versioning.<br>
+<br>
+You can get coins by getting someone to send you some, or turn on Options-&gt;Generate Coins to run a node and generate blocks.  I made the proof-of-work difficulty ridiculously easy to start with, so for a little while in the beginning a typical PC will be able to generate coins in just a few hours.  It'll get a lot harder when competition makes the automatic adjustment drive up the difficulty.  Generated coins must wait 120 blocks to mature before they can be spent.<br>
+<br>
+There are two ways to send money.  If the recipient is online, you can enter their IP address and it will connect, get a new public key and send the transaction with comments.  If the recipient is not online, it is possible to send to their Bitcoin address, which is a hash of their public key that they give you.  They'll receive the transaction the next time they connect and get the block it's in.  This method has the disadvantage that no comment information is sent, and a bit of privacy may be lost if the address is used multiple times, but it is a useful alternative if both users can't be online at the same time or the recipient can't receive incoming connections.<br>
+<br>
+Total circulation will be 21,000,000 coins.  It'll be distributed to network nodes when they make blocks, with the amount cut in half every 4 years.<br>
+<br>
+first 4 years: 10,500,000 coins<br>
+next 4 years: 5,250,000 coins<br>
+next 4 years: 2,625,000 coins<br>
+next 4 years: 1,312,500 coins<br>
+etc...<br>
+<br>
+When that runs out, the system can support transaction fees if needed.  It's based on open market competition, and there will probably always be nodes willing to process transactions for free.<br>
+<br>
+<br>
+<br>
+<i>01 Nov 2008</i><br>
+<br>
+Bitcoin is a new design for a fully peer-to-peer electronic cash system.  A C++ implementation is under development for release as an open source project.<br>
+<br>
+Main properties:<br>
+&nbsp; - Double-spending is prevented with a peer-to-peer network.<br>
+&nbsp; - No mint or other trusted parties.<br>
+&nbsp; - Participants can be anonymous.<br>
+<br>
+The network works in parallel to generate a chain of
+<a href="https://web.archive.org/web/20090822060833/http://www.hashcash.org/">Hashcash</a> style proof-of-work.
+The proof-of-work chain is the key to
+<a href="byzantine.html">solving the Byzantine Generals' Problem</a>
+of synchronising the global view and generating computational proof
+of the majority consensus without having to trust anyone.<br>
+<br>
+Paper: <a href="https://web.archive.org/web/20090822060833/http://www.bitcoin.org/bitcoin.pdf"><b>Bitcoin: A Peer-to-Peer Electronic Cash System</b></a><br>
+<br>
+<b>Abstract.</b>  A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution.  Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent double-spending.  We propose a solution to the double-spending problem using a peer-to-peer network.  The network timestamps transactions by hashing them into an ongoing chain of hash-based proof-of-work, forming a record that cannot be changed without redoing the proof-of-work.  The longest chain not only serves as proof of the sequence of events witnessed, but proof that it came from the largest pool of CPU power.  As long as a majority of CPU power is controlled by nodes that are not cooperating to attack the network, they'll generate the longest chain and outpace attackers.  The network itself requires minimal structure.  Messages are broadcast on a best effort basis, and nodes can leave and rejoin the network at will, accepting the longest proof-of-work chain as proof of what happened while they were gone.<br>
+<br>
+<br>
+<br>
+Related Links<br>
+<a href="https://web.archive.org/web/20090822060833/http://www.weidai.com/bmoney.txt">Wei Dai's b-money</a><br>
+<a href="https://web.archive.org/web/20090822060833/http://unenumerated.blogspot.com/2005/12/bit-gold.html">Nick Szabo's bit gold</a><br>
+<a href="https://web.archive.org/web/20090822060833/http://testgrid.allmydata.org:3567/uri/URI:DIR2-RO:j74uhg25nwdpjpacl6rkat2yhm:kav7ijeft5h7r7rxdp5bgtlt3viv32yabqajkrdykozia5544jqa/wiki.html#%5B%5BDecentralized%20Money%5D%5D">Zooko's blog</a><br>
+<br>
+<br>
+I'll announce new version updates on the mailing list:<br>
+bitcoin-list@lists.sourceforge.net<br>
+<a href="https://web.archive.org/web/20090822060833/http://lists.sourceforge.net/mailman/listinfo/bitcoin-list">Subscribe/Unsubscribe</a><br>
+<a href="https://web.archive.org/web/20090822060833/http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-list">Archives</a><br>
+<br>
+<br>
+Satoshi Nakamoto<br>
+<img src="https://web.archive.org/web/20090822060833im_/http://www.bitcoin.org/something.png" width="120" height="19" border="0"><br>
+<a href="Satoshi_Nakamoto.asc">PGP key</a><br>
+<br>
+</font>
+</body>
+</html>
