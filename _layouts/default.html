@@ -139,7 +139,7 @@
 
         {% if page.has_children == true and page.has_toc != false %}
           <hr>
-          <h2 class="text-delta">Table of contents</h2>
+          <h2 class="text-delta">Contents</h2>
           <ul>
             {%- assign children_list = pages_list | where: "parent", page.title | where: "grand_parent", page.parent -%}
             {% for child in children_list %}
