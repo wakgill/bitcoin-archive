@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 'Bitcoin White Paper (en)'
+title: 'Bitcoin: A Peer-to-Peer Electronic Cash System'
 parent: Bitcoin White Paper
 nav_order: 1
 ---
