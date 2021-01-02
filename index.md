@@ -21,7 +21,7 @@ Bitcoin Archive gathers the most important primary and secondary source material
 
 ### Search
 
-You can search any document in the archive by author, dates, and keywords. Try out terms like micropayment, VISA, Moore's Law, Mike Hearn, node, anonymous. Results will appear in real-time. 
+You can search any document in the archive by author, dates, and keywords. Try out terms like <code>micropayment</code>, <code>VISA, <code>Moore's Law</code>, <code>Mike Hearn</code>, <code>node</code>, <code>anonymous</code>. Results will appear in real-time. 
 
 ### Sharing
 
