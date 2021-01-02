@@ -13,7 +13,7 @@ search_exclude: true
 Bitcoin Archive gathers the most important primary and secondary source material on the creation of Bitcoin in a highly searchable research database.
 {: .fs-6 .fw-300 }
 
-[Read the emails](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [HTML whitepaper](https://github.com/pmarsceill/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Read the emails](/bitcoin-archive/docs/emails){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [HTML whitepaper](/bitcoin-archive/docs/whitepaper/en/){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
