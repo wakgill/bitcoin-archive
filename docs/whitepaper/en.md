@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 'Bitcoin Whitepaper (en)'
-parent: Bitcoin Whitepaper
+title: 'Bitcoin White Paper (en)'
+parent: Bitcoin White Paper
 nav_order: 1
 ---
 
