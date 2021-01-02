@@ -1,11 +1,11 @@
 ---
 layout: default
-title: English Bitcoin Whitepaper
-parent: Bitcoin Whitepapers
+title: 'Bitcoin Whitepaper (en)'
+parent: Bitcoin Whitepaper
 nav_order: 1
 ---
 
-# English Bitcoin Whitepaper
+# English
 {: .no_toc }
 
 Just the Docs has some specific configuration parameters that can be defined in your Jekyll site's _config.yml file.
