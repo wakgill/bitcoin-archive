@@ -7,7 +7,7 @@ permalink: /
 search_exclude: true
 ---
 
-# Learn About Bitcoin From Its Creator
+# Learn About Bitcoin From Satoshi Nakamoto
 {: .fs-9 }
 
 Bitcoin Archive gathers the most important primary and secondary source material on the creation of Bitcoin in a highly searchable research database.
