@@ -1,8 +1,8 @@
 ---
 layout: default
-title: 'Bitcoin: A Peer-to-Peer Electronic Cash System'
+title: 'Bitcoin: Un Sistema de Dinero en Efectivo Electrónico Peer­-to­-Peer'
 parent: Bitcoin White Paper
-nav_order: 1
+nav_order: 2
 ---
 
 # Bitcoin White Paper
