@@ -40,6 +40,10 @@ https://github.com/wakgill/bitcoin-archive.git
 
 Bitcoin Archive is &copy; 2020-{{ "now" | date: "%Y" }} by [Deryk Makgill](/).
 
+### Support
+
+Support this site with BTC, BCH, or BSV: <code>17MEahERxZH6pwWy4z7wWBZvH4rRnv3F7i</code>
+
 ### License
 
 Bitcoin Archive is distributed by an [MIT license](https://github.com/pmarsceill/just-the-docs/tree/master/LICENSE.txt).
@@ -59,8 +63,4 @@ email, or any other method with the owners of this repository before making a ch
 {% endfor %}
 </ul>
 
-### Code of Conduct
 
-Just the Docs is committed to fostering a welcoming community.
-
-[View our Code of Conduct](https://github.com/pmarsceill/just-the-docs/tree/master/CODE_OF_CONDUCT.md) on our GitHub repository.
