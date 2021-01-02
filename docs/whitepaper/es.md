@@ -3,6 +3,7 @@ layout: default
 title: 'Bitcoin: Un Sistema de Dinero en Efectivo Electrónico Peer­-to­-Peer'
 parent: Bitcoin White Paper
 nav_order: 2
+search_exclude: true
 ---
 
 # Bitcoin White Paper
