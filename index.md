@@ -23,9 +23,13 @@ Bitcoin Archive gathers the most important primary and secondary source material
 
 You can search any document in the archive by author, dates, and keywords. Try out terms like <code>micropayment</code>, <code>VISA</code>, <code>Moore's Law</code>, <code>Mike Hearn</code>, <code>node</code>, <code>anonymous</code>. Results will appear in real-time. 
 
+Some terms that are popular now that were not in use then. For example, if you want to find references to the <code>blocksize limit</code>, you might search simply <code>limit</code>.
+
+In general you will find the best search results by typing less to account for variations of words like plurals. Rather than <code>anonymity</code>, for example, just start with <code>anon</code> and you'll get both <code>anonymity</code> and <code>anonymous</code>.
+
 ### Sharing
 
-Highlighting text will automatically update the permalink in browser so that you can link to any specific piece of text in any document. People who click the links you share will automatically jump to the highlighted text on the page. Headers also have anchor links.
+Highlighting text will automatically update the permalink in browser so that you can link to any specific piece of text in any document. People who click the links you share will automatically jump to the highlighted text on the page. Headers also have anchor links for easy jumping or sharing.
 
 ### Copying this archive
 1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
