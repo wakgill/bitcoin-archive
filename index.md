@@ -42,7 +42,7 @@ https://github.com/wakgill/bitcoin-archive.git
 
 ## About the project
 
-Bitcoin Archive is &copy; 2020-{{ "now" | date: "%Y" }} by [Deryk Makgill](/).
+Bitcoin Archive is maintained by [Deryk Makgill](/).
 
 ### Support
 
