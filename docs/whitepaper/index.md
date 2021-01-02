@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bitcoin Whitepaper
+title: Bitcoin White Paper
 nav_order: 2
 has_children: true
 ---
