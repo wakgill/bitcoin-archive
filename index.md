@@ -67,5 +67,4 @@ email, or any other method with the owners of this repository before making a ch
 {% endfor %}
 </ul>
 
-<button class="btn-toggle">Toggle Dark-Mode</button>
 
