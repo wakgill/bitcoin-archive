@@ -3,6 +3,7 @@ layout: default
 title: Support
 nav_order: 20
 has_children: false
+permalink: support
 ---
 
 # Support
