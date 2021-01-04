@@ -67,11 +67,4 @@ email, or any other method with the owners of this repository before making a ch
 {% endfor %}
 </ul>
 
-<script src="https://utteranc.es/client.js"
-        repo="wakgill/bitcoin-archive"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
 
