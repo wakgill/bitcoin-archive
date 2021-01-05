@@ -68,4 +68,6 @@ email, or any other method with the owners of this repository before making a ch
 </ul>
 
 <script src="https://unpkg.com/@paybutton/paybutton@1.0.2/dist/paybutton.js"></script>
-<div class="" to="17MEahERxZH6pwWy4z7wWBZvH4rRnv3F7i"><div class="jss1"><button class="MuiButtonBase-root MuiButton-root MuiButton-text jss2 jss3" tabindex="0" type="button"><span class="MuiButton-label"><span>Support</span></span><span class="MuiTouchRipple-root"></span></button></div></div>
+<div class="" to="17MEahERxZH6pwWy4z7wWBZvH4rRnv3F7i"><div class="jss1"><button class="MuiButtonBase-root MuiButton-root MuiButton-text jss2 jss3" tabindex="0" type="button" style="
+    background: transparent;
+"><span class="MuiButton-label"><span>Support</span></span><span class="MuiTouchRipple-root"></span></button></div></div>
