@@ -68,4 +68,4 @@ email, or any other method with the owners of this repository before making a ch
 </ul>
 
 <script src="https://unpkg.com/@paybutton/paybutton@1.0.2/dist/paybutton.js"></script>
-<div class="paybutton" to="bch_address_here"></div>
+<div class="paybutton" to="17MEahERxZH6pwWy4z7wWBZvH4rRnv3F7i"></div>
