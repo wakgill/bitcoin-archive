@@ -35,6 +35,13 @@ Bitcoins are sent to and from bitcoin addresses, which are essentially random nu
 
 The central bank must be trusted not to debase the currency, but the history of fiat currencies is full of breaches of that trust. Banks must be trusted to hold our money and transfer it electronically, but they lend it out in waves of credit bubbles with barely a fraction in reserve. We have to trust them with our privacy, trust them not to let identity thieves drain our accounts. Their massive overhead costs make micropayments impossible.
 
+## Micropayments
+
+### [Bitcoin open source implementation of P2P currency](/docs/forum/p2p-foundation/1)
+{: .no_toc }
+
+Banks must be trusted to hold our money and transfer it electronically, but they lend it out in waves of credit bubbles with barely a fraction in reserve. We have to trust them with our privacy, trust them not to let identity thieves drain our accounts. Their massive overhead costs make micropayments impossible.
+
 ## Nodes
 
 ### [Re: More BitCoin questions](docs/emails/mike-hearn/12/)
