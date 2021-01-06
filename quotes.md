@@ -1,5 +1,5 @@
 ---
 layout: default
-title: Satoshi Nakamoto Lexicon
+title: Lexicon
 nav_order: 50
 ---
