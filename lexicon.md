@@ -42,6 +42,33 @@ The central bank must be trusted not to debase the currency, but the history of 
 
 Banks must be trusted to hold our money and transfer it electronically, but they lend it out in waves of credit bubbles with barely a fraction in reserve. We have to trust them with our privacy, trust them not to let identity thieves drain our accounts. Their massive overhead costs make micropayments impossible.
 
+### [Bitcoin v0.1 released](/docs/emails/cryptography/17)
+{: .no_toc }
+
+Once it gets bootstrapped, there are so many
+applications if you could effortlessly pay a few cents to a
+website as easily as dropping coins in a vending machine.
+
+### [Bitcoin v0.1 released](/docs/emails/cryptography/17)
+{: .no_toc }
+
+It could get started in a narrow niche like reward points,
+donation tokens, currency for a game or micropayments for adult
+sites. Initially it can be used in proof-of-work applications
+for services that could almost be free but not quite.
+
+### [Bitcoin v0.1 released](/docs/emails/cryptography/17)
+{: .no_toc }
+
+It can already be used for pay-to-send e-mail. The send dialog is
+resizeable and you can enter as long of a message as you like.
+It's sent directly when it connects. The recipient doubleclicks
+on the transaction to see the full message. If someone famous is
+getting more e-mail than they can read, but would still like to
+have a way for fans to contact them, they could set up Bitcoin and
+give out the IP address on their website. "Send X bitcoins to my
+priority hotline at this IP and I'll read the message personally."
+
 ## Nodes
 
 ### [Re: More BitCoin questions](docs/emails/mike-hearn/12/)
