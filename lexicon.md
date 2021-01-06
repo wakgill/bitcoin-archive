@@ -2,6 +2,7 @@
 layout: default
 title: Lexicon
 nav_order: 15
+search_exclude: true
 ---
 
 # Satoshi Nakamoto Lexicon
