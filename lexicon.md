@@ -35,13 +35,6 @@ Bitcoins are sent to and from bitcoin addresses, which are essentially random nu
 
 The central bank must be trusted not to debase the currency, but the history of fiat currencies is full of breaches of that trust. Banks must be trusted to hold our money and transfer it electronically, but they lend it out in waves of credit bubbles with barely a fraction in reserve. We have to trust them with our privacy, trust them not to let identity thieves drain our accounts. Their massive overhead costs make micropayments impossible.
 
-## Nodes
-
-### [Re: More BitCoin questions](docs/emails/mike-hearn/12/)
-{: .no_toc }
-
-As things have evolved, the number of people who need to run full nodes is less than I originally imagined.  The network would be fine with a small number of nodes if processing load becomes heavy.
-
 ## Scaling
 
 ### [Bitcoin P2P e-cash paper](/docs/emails/cryptography/2)
@@ -58,3 +51,9 @@ The bandwidth might not be as prohibitive as you think. A typical transaction wo
 {: .no_toc }
 
 The existing Visa credit card network processes about 15 million Internet purchases per day worldwide.  Bitcoin can already scale much larger than that with existing hardware for a fraction of the cost.  It never really hits a scale ceiling.
+
+
+### [Re: More BitCoin questions](docs/emails/mike-hearn/12/)
+{: .no_toc }
+
+As things have evolved, the number of people who need to run full nodes is less than I originally imagined.  The network would be fine with a small number of nodes if processing load becomes heavy.
