@@ -42,11 +42,6 @@ The central bank must be trusted not to debase the currency, but the history of 
 
 As things have evolved, the number of people who need to run full nodes is less than I originally imagined.  The network would be fine with a small number of nodes if processing load becomes heavy.
 
-### [Bitcoin P2P e-cash paper](/docs/emails/cryptography/2)
-{: .no_toc }
-
-At first, most users would run network nodes, but as the network grows beyond a certain point, it would be left more and more to specialists with server farms of specialized hardware. A server farm would only need to have one node on the network and the rest of the LAN connects with that one node.
-
 ## Scaling
 
 ### [Bitcoin P2P e-cash paper](/docs/emails/cryptography/2)
