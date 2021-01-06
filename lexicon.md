@@ -69,6 +69,11 @@ have a way for fans to contact them, they could set up Bitcoin and
 give out the IP address on their website. "Send X bitcoins to my
 priority hotline at this IP and I'll read the message personally."
 
+### [Re: Questions about BitCoin](/docs/emails/mike-hearn/2)
+{: .no_toc }
+
+For micropayments, you can safely accept the payment immediately.  The size of the payment is too small for the effort to steal it. Micropayments are almost always for intellectual property, where there's no physical loss to the merchant.  Anyone trying to steal a micropayment would probably not be a paying customer anyway, and if they want to steal intellectual property they can use the file sharing networks.
+
 ## Nodes
 
 ### [Re: More BitCoin questions](docs/emails/mike-hearn/12/)
