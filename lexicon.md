@@ -67,10 +67,12 @@ As an additional firewall, a new key pair should be used for each transaction to
 For greater privacy, it's best to use bitcoin addresses only once.
 
 ### [Re: Repost: How anonymous are bitcoins?](docs/forum/bitcoin-forum/41/)
+{: .no_toc }
 
 Bitcoin is still very new and has not been independently analysed. If you're serious about privacy, TOR is an advisable precaution.
 
 ### [Re: Repost: How anonymous are bitcoins?](docs/forum/bitcoin-forum/41/)
+{: .no_toc }
 
 You could use TOR if you don't want anyone to know you're even using Bitcoin.
 
