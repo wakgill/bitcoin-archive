@@ -1,5 +1,5 @@
 ---
 layout: default
 title: Lexicon
-nav_order: 50
+nav_order: 15
 ---
