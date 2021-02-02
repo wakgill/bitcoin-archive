@@ -42,15 +42,11 @@ https://github.com/wakgill/bitcoin-archive.git
 
 ## About the project
 
-Bitcoin Archive is maintained by [Deryk Makgill](/).
+Bitcoin Archive is open source.
 
 ### Support
 
-Support this site with BTC, BCH, or BSV: <code>17MEahERxZH6pwWy4z7wWBZvH4rRnv3F7i</code>
-
-### License
-
-Bitcoin Archive is distributed by an [MIT license](https://github.com/pmarsceill/just-the-docs/tree/master/LICENSE.txt).
+Support this site with BCH, BTC, or BSV: <code>17MEahERxZH6pwWy4z7wWBZvH4rRnv3F7i</code>
 
 ### Contributing
 
