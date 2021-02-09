@@ -16,7 +16,7 @@
 title: Satoshi's Archive
 description: An archive of Satoshi Nakamoto's writings.
 baseurl: "/satoshi-archive" # the subpath of your site, e.g. /blog
-url: "https://www.dev.cloud.bitcoin.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.bitcoin.com" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"
 , "docs/tests/"
