@@ -1,8 +1,9 @@
 ---
 layout: default
-title: Home
+page_title: Home
+title: Learn About Bitcoin through Satoshi Nakamoto's Archive
 nav_order: 1
-description: "Satoshi's Archive"
+description: Bitcoin Archive gathers the most important primary and secondary source material on the creation of Bitcoin in a highly searchable research database
 search_exclude: true
 ---
 
@@ -12,7 +13,7 @@ search_exclude: true
 Satoshi's Archive gathers the most important primary and secondary source material on the creation of Bitcoin in a highly searchable research database.
 {: .fs-6 .fw-300 }
 
-[Read the emails](/satoshi-archive/docs/emails){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [HTML whitepaper](/satoshi-archive/docs/whitepaper/en/){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Read the emails](/satoshi-archive/emails){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [HTML whitepaper](/satoshi-archive/whitepaper/){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 

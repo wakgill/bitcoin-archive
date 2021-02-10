@@ -61,28 +61,40 @@
   {%- for node in pages_list -%}
     {%- if node.parent == nil -%}
       {%- unless node.nav_exclude -%}
-      <li class="nav-list-item{% if page.url == node.url or page.parent == node.title or page.grand_parent == node.title %} active{% endif %}">
+      <li class="nav-list-item{% if page.url == node.url or page.parent == node.page_title or page.grand_parent == node.page_title %} active{% endif %}">
         {%- if node.has_children -%}
           <a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a>
         {%- endif -%}
-        <a href="{{ node.url | relative_url }}" class="nav-list-link{% if page.url == node.url %} active{% endif %}">{{ node.title }}</a>
+        {%- if node.page_title -%}
+          <a href="{{ node.url | relative_url }}" class="nav-list-link{% if page.url == node.url %} active{% endif %}">{{ node.page_title }}</a>
+        {%- else -%}
+          <a href="{{ node.url | relative_url }}" class="nav-list-link{% if page.url == node.url %} active{% endif %}">{{ node.title }}</a>
+        {%- endif -%}
         {%- if node.has_children -%}
-          {%- assign children_list = pages_list | where: "parent", node.title -%}
+          {%- assign children_list = pages_list | where: "parent", node.page_title -%}
           <ul class="nav-list ">
           {%- for child in children_list -%}
             {%- unless child.nav_exclude -%}
-            <li class="nav-list-item {% if page.url == child.url or page.parent == child.title %} active{% endif %}">
+            <li class="nav-list-item {% if page.url == child.url or page.parent == child.page_title %} active{% endif %}">
               {%- if child.has_children -%}
                 <a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a>
               {%- endif -%}
-              <a href="{{ child.url | relative_url }}" class="nav-list-link{% if page.url == child.url %} active{% endif %}"> {{ child.title }}&nbsp;{%- if child.date -%}  <small>- {{ child.date }}</small> {%- endif -%}</a>
+              {%- if child.page_title -%}
+                <a href="{{ child.url | relative_url }}" class="nav-list-link{% if page.url == child.url %} active{% endif %}"> {{ child.page_title }}&nbsp;{%- if child.date -%}  <small>- {{ child.date }}</small> {%- endif -%}</a>
+              {%- else -%}
+                <a href="{{ child.url | relative_url }}" class="nav-list-link{% if page.url == child.url %} active{% endif %}"> {{ child.title }}&nbsp;{%- if child.date -%}  <small>- {{ child.date }}</small> {%- endif -%}</a>
+              {%- endif -%}
               {%- if child.has_children -%}
-                {%- assign grand_children_list = pages_list | where: "parent", child.title | where: "grand_parent", node.title -%}
+                {%- assign grand_children_list = pages_list | where: "parent", child.page_title | where: "grand_parent", node.page_title -%}
                 <ul class="nav-list">
                 {%- for grand_child in grand_children_list -%}
                   {%- unless grand_child.nav_exclude -%}
                   <li class="nav-list-item {% if page.url == grand_child.url %} active{% endif %}">
-                    <a href="{{ grand_child.url | relative_url }}" class="nav-list-link{% if page.url == grand_child.url %} active{% endif %}"> {{ grand_child.title }}&nbsp;{%- if grand_child.date -%}  <small>- {{ grand_child.date }}</small> {%- endif -%}</a>
+                    {%- if grand_child.page_title -%}
+                      <a href="{{ grand_child.url | relative_url }}" class="nav-list-link{% if page.url == grand_child.url %} active{% endif %}"> {{ grand_child.page_title }}&nbsp;{%- if grand_child.date -%}  <small>- {{ grand_child.date }}</small> {%- endif -%}</a>
+                    {%- else -%}
+                      <a href="{{ grand_child.url | relative_url }}" class="nav-list-link{% if page.url == grand_child.url %} active{% endif %}"> {{ grand_child.title }}&nbsp;{%- if grand_child.date -%}  <small>- {{ grand_child.date }}</small> {%- endif -%}</a>
+                    {%- endif -%}
                   </li>
                   {%- endunless -%}
                 {%- endfor -%}

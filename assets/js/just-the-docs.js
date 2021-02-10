@@ -70,7 +70,6 @@ function initNav() {
 function initSearch() {
   var request = new XMLHttpRequest();
   request.open('GET', '{{ "assets/js/search-data.json" | relative_url }}', true);
-  console.log("REQUEST: ", request)
   request.onload = function(){
     if (request.status >= 200 && request.status < 400) {
       var docs = JSON.parse(request.responseText);
