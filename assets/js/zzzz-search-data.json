@@ -17,7 +17,10 @@ permalink: /assets/js/search-data.json
 {%- endif -%}
 {%- for pages in pages_array -%}
   {%- for page in pages -%}
-    {%- if page.title and page.search_exclude != true -%}
+    {%- if page.page_title == undefined -%}
+      {%- assign page.page_title = page.title -%}
+    {%- endif -%}
+    {%- if page.page_title and page.search_exclude != true -%}
       {%- assign page_content = page.content -%}
       {%- assign heading_level = site.search.heading_level | default: 2 -%}
       {%- for j in (2..heading_level) -%}
@@ -33,7 +36,7 @@ permalink: /assets/js/search-data.json
         {%- assign title = title[1] | strip_html -%}
         {%- assign content = titleAndContent[1] -%}
         {%- assign url = page.url -%}
-        {%- if title == page.title and parts[0] == '' -%}
+        {%- if title == page.page_title and parts[0] == '' -%}
           {%- assign title_found = true -%}
         {%- else -%}
           {%- assign id = titleAndContent[0] -%}
@@ -47,7 +50,11 @@ permalink: /assets/js/search-data.json
         {%- endif -%}
   {%- unless i == 0 -%},{%- endunless -%}
   "{{ i }}": {
-    "doc": {{ page.title | jsonify }},
+    {%- if page.page_title -%}
+      "doc": {{ page.page_title | jsonify }},
+    {%- else -%}
+      "doc": {{ page.title | jsonify }},
+    {%-endif -%}
     "title": {{ title | jsonify }},
     "content": {{ content | replace: '</h', ' . </h' | replace: '<hr', ' . <hr' | replace: '</p', ' . </p' | replace: '<ul', ' . <ul' | replace: '</ul', ' . </ul' | replace: '<ol', ' . <ol' | replace: '</ol', ' . </ol' | replace: '</tr', ' . </tr' | replace: '<li', ' | <li' | replace: '</li', ' | </li' | replace: '</td', ' | </td' | replace: '<td', ' | <td' | replace: '</th', ' | </th' | replace: '<th', ' | <th' | strip_html | remove: 'Table of contents' | normalize_whitespace | replace: '. . .', '.' | replace: '. .', '.' | replace: '| |', '|' | append: ' ' | jsonify }},
     "url": "{{ url | relative_url }}",
@@ -58,8 +65,16 @@ permalink: /assets/js/search-data.json
       {%- unless title_found -%}
   {%- unless i == 0 -%},{%- endunless -%}
   "{{ i }}": {
-    "doc": {{ page.title | jsonify }},
-    "title": {{ page.title | jsonify }},
+    {%- if page.page_title -%}
+      "doc": {{ page.page_title | jsonify }},
+    {%- else -%}
+      "doc": {{ page.title | jsonify }},
+    {%-endif -%}
+    {%- if page.page_title -%}
+      "title": {{ page.page_title | jsonify }},
+    {%- else -%}
+      "title": {{ page.title | jsonify }},
+    {%-endif -%}
     "content": {{ parts[0] | replace: '</h', ' . </h' | replace: '<hr', ' . <hr' | replace: '</p', ' . </p' | replace: '<ul', ' . <ul' | replace: '</ul', ' . </ul' | replace: '<ol', ' . <ol' | replace: '</ol', ' . </ol' | replace: '</tr', ' . </tr' | replace: '<li', ' | <li' | replace: '</li', ' | </li' | replace: '</td', ' | </td' | replace: '<td', ' | <td' | replace: '</th', ' | </th' | replace: '<th', ' | <th' | strip_html | remove: 'Table of contents' | normalize_whitespace | replace: '. . .', '.' | replace: '. .', '.' | replace: '| |', '|' | append: ' ' | jsonify }},
     "url": "{{ page.url | relative_url }}",
     "relUrl": "{{ page.url }}"
