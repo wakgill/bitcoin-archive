@@ -3,7 +3,7 @@ layout: default
 page_title: Lexicon
 title: Satoshi Nakamoto definitions of key Bitcoin concepts
 description: Key Bitcoin concepts, terms and explanations provided by Satoshi Nakamoto from various sources
-nav_order: 15
+nav_order: 5
 search_exclude: true
 ---
 
