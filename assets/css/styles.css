@@ -20,9 +20,20 @@
   background: #555;
 }
 
-body.dark-theme {
-  background: rgb(19, 23, 32);
+html[data-theme="dark"] {
+  background-color: rgb(19, 23, 32);
   color: #aaaaaa;
+}
+
+html, html[data-theme="light"] {
+  color: #131720;
+  background-color: #fbfcff;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    content: "dark";
+  }
 }
 
 body.dark-theme h1 {
@@ -310,8 +321,7 @@ body {
   font-family: Gilroy, sans-serif, sans-serif;
   font-size: inherit;
   line-height: 1.4;
-  color: #131720;
-  background-color: #fbfcff;
+
 }
 
 ol,
