@@ -35,7 +35,7 @@ What is needed is an electronic payment system based on cryptographic proof inst
 
 We define an electronic coin as a chain of digital signatures. Each owner transfers the coin to the next by digitally signing a hash of the previous transaction and the public key of the next owner and adding these to the end of the coin. A payee can verify the signatures to verify the chain of ownership.
 
-<p><img loading="lazy" class=" wp-image-227 aligncenter" src="/satoshi-archive/assets/images/transactions.png" alt="" width="491" height="293"></p>
+<p><img loading="lazy" class=" wp-image-227 aligncenter" src="/assets/images/transactions.png" alt="" width="491" height="293"></p>
 
 The problem of course is the payee can’t verify that one of the owners did not double-spend the coin. A common solution is to introduce a trusted central authority, or mint, that checks every transaction for double spending. After each transaction, the coin must be returned to the mint to issue a new coin, and only coins issued directly from the mint are trusted not to be double-spent. The problem with this solution is that the fate of the entire money system depends on the company running the mint, with every transaction having to go through them, just like a bank.
 
