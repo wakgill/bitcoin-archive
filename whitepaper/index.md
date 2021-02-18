@@ -45,7 +45,7 @@ We need a way for the payee to know that the previous owners did not sign any ea
 
 The solution we propose begins with a timestamp server. A timestamp server works by taking a hash of a block of items to be timestamped and widely publishing the hash, such as in a newspaper or Usenet post[2-5]. The timestamp proves that the data must have existed at the time, obviously, in order to get into the hash. Each timestamp includes the previous timestamp in its hash, forming a chain, with each additional timestamp reinforcing the ones before it.
 
-<p><img loading="lazy" class="aligncenter wp-image-228" src="/satoshi-archive/assets/images/time-stamp-sever.png"></p>
+<p><img loading="lazy" class="aligncenter wp-image-228" src="/assets/images/time-stamp-server.png"></p>
 
 ## 4. Proof-of-Work
 
@@ -53,7 +53,7 @@ To implement a distributed timestamp server on a peer-to-peer basis, we will nee
 
 For our timestamp network, we implement the proof-of-work by incrementing a nonce in the block until a value is found that gives the block’s hash the required zero bits. Once the CPU effort has been expended to make it satisfy the proof-of-work, the block cannot be changed without redoing the work. As later blocks are chained after it, the work to change the block would include redoing all the blocks after it.
 
-<p><img loading="lazy" class="aligncenter wp-image-229" src="/satoshi-archive/assets/images/proof-of-work.png"></p>
+<p><img loading="lazy" class="aligncenter wp-image-229" src="/assets/images/proof-of-work.png"></p>
 
 The proof-of-work also solves the problem of determining representation in majority decision making. If the majority were based on one-IP-address-one-vote, it could be subverted by anyone able to allocate many IPs. Proof-of-work is essentially one-CPU-one-vote. The majority decision is represented by the longest chain, which has the greatest proof-of-work effort invested in it. If a majority of CPU power is controlled by honest nodes, the honest chain will grow the fastest and outpace any competing chains. To modify a past block, an attacker would have to redo the proof-of-work of the block and all blocks after it and then catch up with and surpass the work of the honest nodes. We will show later that the probability of a slower attacker catching up diminishes exponentially as subsequent blocks are added.
 
@@ -86,7 +86,7 @@ The incentive may help encourage nodes to stay honest. If a greedy attacker is a
 
 Once the latest transaction in a coin is buried under enough blocks, the spent transactions before it can be discarded to save disk space. To facilitate this without breaking the block’s hash, transactions are hashed in a Merkle Tree [7][2][5], with only the root included in the block’s hash. Old blocks can then be compacted by stubbing off branches of the tree. The interior hashes do not need to be stored.
 
-<p><img loading="lazy" class="aligncenter wp-image-230" src="/satoshi-archive/assets/images/disc-space.png"></p>
+<p><img loading="lazy" class="aligncenter wp-image-230" src="/assets/images/disc-space.png"></p>
 
 A block header with no transactions would be about 80 bytes. If we suppose blocks are generated every 10 minutes, 80 bytes * 6 * 24 * 365 = 4.2MB per year. With computer systems typically selling with 2GB of RAM as of 2008, and Moore’s Law predicting current growth of 1.2GB per year, storage should not be a problem even if the block headers must be kept in memory.
 
@@ -94,7 +94,7 @@ A block header with no transactions would be about 80 bytes. If we suppose block
 
 It is possible to verify payments without running a full network node. A user only needs to keep a copy of the block headers of the longest proof-of-work chain, which he can get by querying network nodes until he’s convinced he has the longest chain, and obtain the Merkle branch linking the transaction to the block it’s timestamped in. He can’t check the transaction for himself, but by linking it to a place in the chain, he can see that a network node has accepted it, and blocks added after it further confirm the network has accepted it.
 
-<p><img loading="lazy" class="aligncenter wp-image-232" src="/satoshi-archive/assets/images/spv.png"></p>
+<p><img loading="lazy" class="aligncenter wp-image-232" src="/assets/images/spv.png"></p>
 
 As such, the verification is reliable as long as honest nodes control the network, but is more vulnerable if the network is overpowered by an attacker. While network nodes can verify transactions for themselves, the simplified method can be fooled by an attacker’s fabricated transactions for as long as the attacker can continue to overpower the network. One strategy to protect against this would be to accept alerts from network nodes when they detect an invalid block, prompting the user’s software to download the full block and alerted transactions to confirm the inconsistency. Businesses that receive frequent payments will probably still want to run their own nodes for more independent security and quicker verification.
 
