@@ -6,3 +6,5 @@ title: Satoshi Nakamoto miscellaneous replies on P2P Foundation Forum
 has_children: true
 nav_order: 1
 ---
+
+# P2P Foundation Forum Posts

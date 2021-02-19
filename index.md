@@ -8,7 +8,6 @@ search_exclude: true
 ---
 
 # Learn About Bitcoin From Satoshi Nakamoto's Emails And Posts 
-{: .fs-9 }
 
 Satoshi's Archive gathers the most important primary and secondary source material on the creation of Bitcoin in a highly searchable research database.
 {: .fs-6 .fw-300 }

@@ -7,3 +7,5 @@ description: Satoshi Nakamoto's posts on Bitcoin.com Forum regarding the open so
 has_children: true
 nav_order: 2
 ---
+
+# Bitcoin Forum Posts
