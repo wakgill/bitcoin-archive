@@ -507,7 +507,7 @@ hr {
 @media (min-width: 50rem) {
   .site-nav {
     display: block;
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     overflow-y: auto;
     flex: 1 1 auto;
@@ -1576,7 +1576,6 @@ h6,
   .search-input-wrap {
     position: absolute;
     width: 100%;
-    max-width: 536px;
     height: 100% !important;
     border-radius: 0;
     box-shadow: none;
@@ -8542,6 +8541,44 @@ figure.highlight code {
   background: rgb(19, 23, 32);
 }
 
+#toggle-switch-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+#toggle-switch {
+  touch-action: manipulation;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  user-select: none;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.4s;
+  border-radius: none;
+  z-index: 1;
+}
+
+#slider-nub {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  width: 28px;
+  padding: 6px;
+  left: -4px;
+  bottom: 0px;
+  background-color: rgba(200, 205, 216, 0.22);
+  transition: 0.4s;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -8550,7 +8587,6 @@ html {
   visibility: visible;
   opacity: 1;
 }
-
 @media (min-width: 31.25rem) {
   html {
     font-size: 16px !important;

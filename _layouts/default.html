@@ -69,6 +69,46 @@
           </svg>
         </a>
       </div>
+
+      <div id="toggle-switch-container">
+        <div id="toggle-switch" onclick="modeSwitcher()">
+          <span id="slider-nub" >
+            <Svg id="moon-icon" data-icon="dark-mode" viewBox="0 0 13 18" width="10px" >
+              <g stroke="none" strokeWidth="1" fill="currentColor" fillRule="evenodd">
+                <g
+                  transform="translate(-1215.000000, -128.000000)"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                >
+                  <g transform="translate(1206.000000, 121.000000)">
+                    <g>
+                      <g transform="translate(9.000000, 7.000000)">
+                        <path d="M4.75,0.9 C3.91313122,0.9 3.10177193,1.02576069 2.31932118,1.2728504 L0.498916587,1.84771501 L2.32087439,2.41763777 C5.17274067,3.30972402 7.15,5.96132028 7.15,9 C7.15,12.0386797 5.17274067,14.690276 2.32087439,15.5823622 L0.498916587,16.152285 L2.31932118,16.7271496 C3.10177193,16.9742393 3.91313122,17.1 4.75,17.1 C9.22137085,17.1 12.85,13.4713708 12.85,9 C12.85,4.52862915 9.22137085,0.9 4.75,0.9 Z M4.505,2.106 L4.75,2.1 C8.55862915,2.1 11.65,5.19137085 11.65,9 L11.6459962,9.23708392 C11.5208816,12.9360945 8.47928271,15.9 4.75,15.9 L4.505,15.894 L4.59940932,15.8360675 C6.88330403,14.3836375 8.35,11.8351592 8.35,9 L8.34544315,8.72655186 C8.25452409,6.00156333 6.80963001,3.56950988 4.59940932,2.16393248 L4.505,2.106 Z" />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </Svg>
+            <svg id="sun-icon" data-icon="light-mode" width="50px" viewBox="0 0 100 100" fill="white" >
+              <path d="M32,24a2.6,2.6,0,1,0,4.51-2.61L31.06,12a2.61,2.61,0,0,0-4.51,2.61Z" />
+              <path d="M12,31.06l9.4,5.43A2.61,2.61,0,1,0,24,32l-9.4-5.43A2.61,2.61,0,1,0,12,31.06Z" />
+              <path d="M7.6,52.61H18.46a2.61,2.61,0,0,0,0-5.21H7.6a2.61,2.61,0,0,0,0,5.21Z" />
+              <path d="M24.94,64.47a2.61,2.61,0,0,0-3.56-1L12,68.94a2.61,2.61,0,1,0,2.6,4.51L24,68A2.61,2.61,0,0,0,24.94,64.47Z" />
+              <path d="M27.5,89a2.61,2.61,0,0,0,3.56-1l5.43-9.4A2.61,2.61,0,1,0,32,76l-5.43,9.4A2.61,2.61,0,0,0,27.5,89Z" />
+              <path d="M47.4,81.54V92.39a2.6,2.6,0,1,0,5.21,0V81.54a2.6,2.6,0,1,0-5.21,0Z" />
+              <path d="M68.94,88a2.61,2.61,0,1,0,4.51-2.61L68,76a2.61,2.61,0,1,0-4.51,2.61Z" />
+              <path d="M76,68l9.4,5.43A2.61,2.61,0,1,0,88,68.94l-9.4-5.43A2.61,2.61,0,1,0,76,68Z" />
+              <path d="M78.94,50a2.61,2.61,0,0,0,2.6,2.61H92.4a2.61,2.61,0,0,0,0-5.21H81.54A2.61,2.61,0,0,0,78.94,50Z" />
+              <path d="M78.62,36.49,88,31.06a2.61,2.61,0,1,0-2.6-4.51L76,32a2.61,2.61,0,1,0,2.6,4.51Z" />
+              <path d="M64.47,24.94A2.61,2.61,0,0,0,68,24l5.43-9.4A2.61,2.61,0,0,0,68.94,12l-5.43,9.4A2.61,2.61,0,0,0,64.47,24.94Z" />
+              <path d="M50,21.06a2.61,2.61,0,0,0,2.6-2.61V7.61a2.6,2.6,0,1,0-5.21,0V18.46A2.61,2.61,0,0,0,50,21.06Z" />
+              <path d="M73.5,50A23.5,23.5,0,1,0,50,73.5,23.53,23.53,0,0,0,73.5,50ZM50,69.5A19.5,19.5,0,1,1,69.5,50,19.52,19.52,0,0,1,50,69.5Z" />
+            </svg>
+          </span>
+        </div>
+      </div>
+
       <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
         {% if site.just_the_docs.collections %}
           {% assign collections_size = site.just_the_docs.collections | size %}
@@ -89,6 +129,7 @@
       </nav>
     </div>
     <div class="main" id="top">
+      
       <div id="main-header" class="main-header">
         {% if site.search_enabled != false %}
         <div class="search">
@@ -103,6 +144,7 @@
         </div>
         {% endif %}
       </div>
+
       <div id="main-content-wrap" class="main-content-wrap">
         {% unless page.url == "/" %}
         {% if page.parent %}
@@ -134,6 +176,7 @@
         </nav>
         {% endif %}
         {% endunless %}
+
         <span id="CONTENT">
           <div id="main-content" class="main-content" role="main">
             {% if site.heading_anchors != false %}
@@ -344,33 +387,37 @@
     btn.addEventListener("click", modeSwitcher)
 
     if  (theme === "dark") {
-        dark();
-      } else {
+      dark();
+    } else {
+      light();
+    }
+
+    function modeSwitcher() {
+      let currentMode = document.documentElement.getAttribute('data-theme');
+      if (currentMode === "dark") {
         light();
+      } else {
+        dark();
       }
+    }
 
-      function modeSwitcher() {
-        let currentMode = document.documentElement.getAttribute('data-theme');
-        if (currentMode === "dark") {
-          light();
-        } else {
-          dark();
-        }
-      }
+    function light() {
+      document.documentElement.setAttribute('data-theme', 'light');
+      document.getElementById("moon-icon").style.display = "inline-block";
+      document.getElementById("sun-icon").style.display = "none";
+      document.body.classList.remove("dark-theme");
+      window.localStorage.setItem('theme', 'light');
+      window.bitcoinComNavbar.setContrast(false);
+    }
 
-      function light() {
-        document.documentElement.setAttribute('data-theme', 'light');
-        document.body.classList.remove("dark-theme");
-        window.localStorage.setItem('theme', 'light');
-        window.bitcoinComNavbar.setContrast(false);
-      }
-
-      function dark() {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        document.body.classList.add("dark-theme");
-        window.localStorage.setItem('theme', 'dark');
-        window.bitcoinComNavbar.setContrast(true);
-      }
+    function dark() {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      document.getElementById("moon-icon").style.display = "none";
+      document.getElementById("sun-icon").style.display = "inline-block";
+      document.body.classList.add("dark-theme");
+      window.localStorage.setItem('theme', 'dark');
+      window.bitcoinComNavbar.setContrast(true);
+    }
 
   </script>
   <!---The Times 03/Jan/2009 Chancellor on brink of second bailout for banks--->
