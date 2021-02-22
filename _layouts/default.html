@@ -193,13 +193,23 @@
             <hr>
             <h2 class="text-delta">Contents</h2>
             <ul>
-              {%- assign children_list = pages_list | where: "parent", page.page_title | where: "grand_parent", page.parent
-              -%}
+              {% if page.page_title %}
+                {%- assign children_list = pages_list | where: "parent", page.page_title | where: "grand_parent", page.parent -%}
+              {% else %}
+                {%- assign children_list = pages_list | where: "parent", page.title | where: "grand_parent", page.parent -%}
+              {% endif %}
               {% for child in children_list %}
-              <li>
-                <a href="{{ child.url | relative_url }}">{{ child.page_title }}</a>{% if child.summary %} - {{ child.summary
-                }}{% endif %}
-              </li>
+                {% if child.page_title %}
+                  <li>
+                    <a href="{{ child.url | relative_url }}">{{ child.page_title }}</a>{% if child.summary %} - {{ child.summary
+                    }}{% endif %}
+                  </li>
+                {% else %}
+                  <li>
+                    <a href="{{ child.url | relative_url }}">{{ child.title }}</a>{% if child.summary %} - {{ child.summary
+                    }}{% endif %}
+                  </li>
+                {% endif %} 
               {% endfor %}
             </ul>
             {% endif %}
