@@ -220,7 +220,7 @@
               {% if site.back_to_top %}
               <p><a href="#top" id="back-to-top">{{ site.back_to_top_text }}</a></p>
 
-              {% endif %}<button class="btn-toggle">Toggle Dark-Mode</button>
+              {% endif %}
 
               {% if site.last_edit_timestamp or site.gh_edit_link %}
               <div class="d-flex mt-2">
@@ -392,10 +392,7 @@
   <script src="https://navbar.cloud.bitcoin.com/navbar.js"></script>
   <script src="https://footer.cloud.bitcoin.com/footer.js"></script>
   <script>
-    const btn = document.querySelector(".btn-toggle");
-
-    btn.addEventListener("click", modeSwitcher)
-
+    
     if  (theme === "dark") {
       dark();
     } else {

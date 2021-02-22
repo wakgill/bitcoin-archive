@@ -593,6 +593,15 @@ body.dark-theme .site-title {
   );
 }
 
+body.dark-theme .site-title:hover {
+  background-image: linear-gradient(
+    -90deg,
+    #aaaaaa 0%,
+    rgba(216, 216, 216, 0.16) 80%,
+    rgb(216, 216, 216, 0) 100%
+  );
+}
+
 .site-button:hover {
   background-image: linear-gradient(
     -90deg,
