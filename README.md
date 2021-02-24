@@ -16,21 +16,28 @@ See license text at [https://github.com/wakgill/bitcoin-archive/blob/main/LICENS
 git clone https://github.com/bitcoin-portal/satoshi-archive.git
 ```
 
-2. Cut a new branch
+2. Cut a new branch from `main`
 ```
 git checkout -b <branch-name>
 ```
 **Note: branch name should follow this naming convention: `feature/<feature-name>` or `fix/<bug-name>`
 
-3. Buld site and run on local server
+***Note: if you already have repo cloned locally, be sure to fetch most recent updates from `main` branch before cutting a new branch, as your local repository  may no longer be up to date:
+```
+git checkout main
+git pull
+git checkout -b <branch-name>
+```
+
+3. Build site and run on local server
 ```
 jekyll serve
 ```
 
 4. View site locally at [http://127.0.0.1:4000/satoshi-archive/](http://127.0.0.1:4000/satoshi-archive/)
 
-5. Stage, commit, and push changes to your branch.
+5. Stage, commit, and push changes to your branch
 
-6. Submit a Pull Request into `base: main`.
+6. Submit a Pull Request into `base: main`
 
-7. Request @catboop for review. 
+7. Request @catboop for review
