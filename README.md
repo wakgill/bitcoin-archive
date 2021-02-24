@@ -28,3 +28,9 @@ jekyll serve
 ```
 
 4. View site locally at [http://127.0.0.1:4000/satoshi-archive/](http://127.0.0.1:4000/satoshi-archive/)
+
+5. Stage, commit, and push changes to your branch.
+
+6. Submit a Pull Request into `base: main`.
+
+7. Request @catboop for review. 
